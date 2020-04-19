@@ -1,0 +1,89 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.4);
+}
+.navbar ul {
+    float: right;
+    margin-right: 20px;
+}
+ .navbar ul li{
+     list-style: none;
+     margin: 0 8px;
+     display: inline-block;
+     line-height: 80px;
+ }
+ .navbar ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding: 6px  13px;
+    font-family: sans-serif;
+    transition: 4s;
+}
+.navbar ul li a.active,
+.navbar ul li a :hover{
+    background: green;
+    border-radius: 2px;
+}
+
+ 
+ .signin{
+     color:whitesmoke;
+     padding: 3em;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%) translateY(-50%); 
+ }
+
+ 
+    h2{
+      margin-top: 0px;
+      color:wheat;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bolder;
+      font-size: 50px;
+      text-align: center;
+  }
+    input{
+        display: block;
+        width: 320px;
+        height: 50px;
+        background: rgba(50, 141, 32, 0.3);
+        outline: none;
+        border: 1px solid rgba(24, 107, 62, 0.74);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        border-radius: 5px;
+    }
+     button{
+         width: 332px;
+         height: 50px;
+         font-size: 16px;
+         background: rgb(31, 158, 84);
+         font-weight: bolder;
+         color: #fff;
+         border: 0px;
+         border-radius: 5px;
+     }
+     footer{
+         color: white;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-size: 14px;
+         font-weight: bold;
+         font-style: italic;
+     }

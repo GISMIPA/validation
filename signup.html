@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="./css/signupstyle.css">
+    <link rel="icon" href="./img/signin.png">
+    
+</head>
+<body >
+    <nav class="navbar">
+        <ul>
+              <li><a  class="active" href="signup.html">SignUp</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="home.html">Home</a></li>
+        </ul>
+  </nav>
+  <div id="wrapper">
+    <form method="POST" action="index.php" onsubmit="return Validate()" name="vform" >
+        <div id="username_div">
+          <label>Username</label> <br>
+          <input type="text" name="username" class="textInput">
+          <div id="name_error"></div>
+        </div>
+        <div id="email_div">
+          <label>Email</label> <br>
+          <input type="email" name="email" class="textInput">
+          <div id="email_error"></div>
+        </div>
+        <div id="password_div">
+          <label>Password</label> <br>
+          <input type="password" name="password" class="textInput"id="pwd"  onkeyup="validatePassword(this.value);"/><span id="msg"></span>
+        
+        </div>
+        <div id="pass_confirm_div">
+           <label>Password confirm</label> <br>
+           <input type="password" name="password_confirm" class="textInput">
+           <div id="password_error"></div>
+           <label>Phone_number</label> <br>
+           <div id="Phone_confirm_div"></div>
+           <input type="number" name="Phone_number" class="textInput">
+           <div id="Phone_noerror"></div>
+        </div>
+        <div>
+        <input type="submit" name="register" value="Register" class="btn">
+        </div>
+    </form>
+   </div>
+ </body>
+ </html>
+        <script src="signup.js"></script>

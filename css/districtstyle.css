@@ -1,0 +1,72 @@
+
+
+.container{
+    width: 95%;
+    overflow:hidden;
+    background: black;
+    margin: 20px auto;
+    padding: 20px 2px;
+}
+ .container ul{
+     padding: 0px;
+     margin: 0px;
+ }
+  .container ul li{
+      list-style: none;
+      float: left;
+      width: 30%;
+      height: 300px;
+      background: brown;
+      margin : 40px 30px 0px  40px;
+      box-sizing: border-box;
+      border: 2px solid black;
+  }
+   .container ul li a img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     border-radius: 50%;
+     height: 242.5px;
+     border-style: double;
+       }
+  .container ul li :hover
+  {
+ opacity: 0.9;
+   }
+.container ul li .title :hover
+{
+background:grey;
+color: black;
+}
+
+.container ul li .title
+{
+width: 100%;
+height: 50px;
+line-height: 50px;
+background: white;
+text-align: center;
+font-style: italic;
+font-weight: bolder;
+font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width:1250px)
+{
+.container  ul  li{
+width: 40%;
+margin-left: 50px;
+                          }
+}
+@media screen and (max-width:750px)
+{
+.container ul li
+    {
+   width: 100%;
+   margin-left: 50px;
+                         }
+}
+.container ul li{
+ float: none;
+ width: 90%;
+ margin: 40px auto;
+}
